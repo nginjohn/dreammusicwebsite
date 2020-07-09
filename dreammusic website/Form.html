@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>First HTML WebSite</title>
+    <link rel="stylesheet" type="text/css" href="Layout.css" />
+    <link rel="stylesheet" type="text/css" href="Menu.css" />
+</head>
+<body>
+    <header style=" background-image:url('Pictures/marshmello-5120x2880-live-concert-4k-7560 (1).jpg')" >
+        
+    </header>
+    <nav>
+        <h2>Menu:</h2>
+        <ul>
+            <li><a href="Index.html" target="_self">Main Page</a></li>
+            <li><a href="Employee.html" target="_self">Year of the DJ's</a></li>
+            <li><a href="Article.html" target="_self">BIO</a></li>
+            <li><a href="Form.html" target="_self">Form</a></li>
+            <li><a href="map_picture.html" target="_self">Contact</a></li>
+            <li><a href="https://plug.dj/" target="_self">We are here!</a></li>
+            <li><a href="https://you.dj/pl" target="_blank">Feel it!</a></li>
+            <li><a href="http://www.google.com" target="_self">Search</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h2 style="color:white;">Requirements to apply for being a DJ</h2>
+        <form action="mailto:lukasz.putz@put.poznan.pl" method="post" enctype="text/plain">
+            <p>
+                <i style="color:white;">
+                    Please fill this form.
+                    <br />
+                    <b style="color:white;">
+                        Required fields are checked like
+                        <em style="color:white;">*</emstyle="color:white;">
+                    </b>
+                    
+                </i>
+            </p>
+            <fieldset style="color:white;">
+                <legend>Contact information</legend>
+                <label for="name">Name<em>*</em></label>
+                <input id="name" name="name" placeholder="give your name" autofocus required/>
+                <br />
+                <label for="surname">Surname<em>*</em></label>
+                <input id="surname" name="surname" placeholder="give your surname" autofocus required/>
+                <br />
+                <label for="mail">E-mail<em>*</em></label>
+                <input id="mail" name="mail" type="email" placeholder="give your email" required />
+                <br />
+                <label for="phone">Phone number</label>
+                <input id="phone" name="phone" placeholder="(+48)-xxx-xxx-xxx" />
+                <br />
+            </fieldset>
+            <fieldset style="color:white;">
+                <legend>Specific information</legend>
+                <label for="Birth">Date of birth<em>*</em> </label>
+                <input id="Birth" name="Birth" type="date"max="31.12.2018" required />
+                <br />
+                <label for="Age">Age</label>
+                <input id="Age" name="Age" type="number" min="0" max="120" step="1" />
+                <br />
+                <label for="sex">Sex</label>
+                    <select id="sex" name="sex" required>
+                        <option value="woman">woman</option>
+                        <option value="man">man</option>
+                    </select> 
+                <br />
+                <label for="height">Growth</label>               
+                50
+                <input type="range" name="height" id="height" min="50" max="250"  />
+                250
+                <br />
+            </fieldset>
+            <fieldset style="color:white;">
+                <legend>What kind of Music you like?</legend>
+                <label for="rap">
+                    <input id="rap" name="rap" type="checkbox" />
+                    Rap<br />
+                </label>
+                <label for="Rock">
+                    <input id="Rock" name="Rock" type="checkbox" />
+                    Rock<br />
+                </label>
+                <label for="EDM">
+                    <input id="EDM" name="EDM" type="checkbox" />
+                    EDM<br />
+                </label>
+                <label for="et">
+                    <input id="et" name="et" type="checkbox" />
+                    Electro  Freestyle<br />
+                </label>
+                <label for="stamps">
+                    <input id="stamps" name="stamps" type="checkbox" />
+                    Disco Afro<br />
+                </label>
+            </fieldset>
+            <fieldset style="color:white;">
+                <legend>Income Range</legend>
+                <input type="radio" name="income" checked />0-2000zł<br />
+                <input type="radio" name="income"  />2000-5000zł<br />
+                <input type="radio" name="income"  />5000-10000zł<br />
+                <input type="radio" name="income"  />10000-20000zł<br />
+                <input type="radio" name="income"  />More than 20000zł<br />
+            </fieldset>
+            <fieldset style="color:white;">
+                <legend>Choose a browser</legend>
+                <input list="browser" name="browser" />
+                <br />
+                <datalist id="browser">
+                    <option value="Internet Explorer">Internet Explorer</option>
+                    <option value="Chrome">Chrome</option>
+                    <option value="Opera">Opera</option>
+                    <option value="Edge">Edge</option>
+                    <option value="Mozilla">Mozilla</option>
+                    <option value="Safari">Safari</option>
+                </datalist>
+            </fieldset>
+            <fieldset style="color:white;">
+                <legend>More information</legend>
+                <label for="comment">Give your opinion</label>
+                <br />
+                <textarea id="comment" name="comment" >
+ 
+                </textarea>
+                <br />
+                <label for="file">Send your CV</label>
+                <input type="file" id="file" name="file" accept="image/*"
+            </fieldset>
+            <p>
+                <input type="submit" value="Send this Form" />
+                <input type="reset" value="Clear all Form" />
+            </p>
+        </form>        
+
+    </article>
+    <aside>
+        <iframe src="JavaScript_Controls.html"></iframe>
+    </aside>
+    <footer id="main_footer">
+        2018 BY DAVID MORALES. ALL RIGHTS RESERVED. WEB DESIGN ENGIN CAN DESIGN
+    </footer>
+</body>
+</html>

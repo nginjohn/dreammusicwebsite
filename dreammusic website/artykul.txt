@@ -1,0 +1,39 @@
+Marginesy w CSS
+
+Wprowadzenie
+
+Ka¿dy element generuje w dokumencie prostok¹tny obszar zwany pude³kiem (ang. Box model). Pude³ko sk³ada siê z: 
+
+1.	Zawartoœci - "Content" (np. test, obrazek itd.)
+2.	Otaczaj¹cych marginesów wewnêtrznych - "Padding"
+3.	Obramowania - "Border"
+4.	Marginesów - "Margin"
+
+Ostatnie trzy sk³adniki s¹ opcjonalne, tzn. mog¹ mieæ wartoœæ zero. Obwód (zewnêtrzny) ka¿dego z czterech 
+obszarów nazywamy krawêdzi¹ ("Edge"). Wed³ug CSS rozmiary elementu (w³asnoœci width oraz height) odnosz¹ siê 
+do samej zawartoœci ("Content") i nie wp³ywaj¹ na pozosta³e obszary modelu pude³kowego ("Box model"), 
+które s¹ tworzone na zewn¹trz zawartoœci, ale wewn¹trz pude³ka. Natomiast t³o elementu jest okreœlone 
+dla wszystkich z podanych powy¿ej obszarów z wyj¹tkiem marginesów zewnêtrznych, które zawsze s¹ przezroczyste 
+("Transparent"). Zapamiêtanie tych krótkich zasad pozwoli Ci unikn¹æ w przysz³oœci nieoczekiwanych problemów 
+z wyœwietlaniem elementów strony. Na Rys. 1 znajdziesz graficzn¹ interpretacjê pude³kowej budowy elementów w CSS. 
+
+Rys. 1. Struktura ramek i marginesów znacznika HTML wed³ug CSS
+
+Przyk³ad zastosowania wzoru w znaczniku Figure
+
+Postaæ czasowa sygna³u okresowego zmiennego sinusoidalnie zgodnie z zale¿noœci¹: 
+
+x1(t)=Am sin(2Pift+Fi0)
+gdzie:
+•	t - czas,
+•	Am - amplituda sygna³u,
+•	2Pif - czêstotliwoœæ sygna³u,
+•	Fi0 - faza pocz¹tkowa.
+
+Autorzy artyku³u:
+Jan Kowalski
+adres email: jan.kowalski@put.poznan.pl
+Henryk Nowak
+adres email: henryk.nowak@put.poznan.pl
+
+ród³o strony: wikipedia.pl 

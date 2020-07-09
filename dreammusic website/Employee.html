@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html>
+<head >
+    <meta charset="utf-8" />
+    <title>First HTML WebSite</title>
+    <link rel="stylesheet" type="text/css" href="Layout.css" />
+    <link rel="stylesheet" type="text/css" href="Menu.css" />
+    <script type="text/javascript" language="JavaScript">
+        function Employee(name, surname, id, salary)
+        {
+            this.name = name;
+            this.surname = surname;
+            this.id = id;
+            this.salary = salary;
+        }
+
+        var Table123 = new Array();
+        Table123[0] = new Employee('Techno House', 'Carl Cox', 1, 26.254);
+        Table123[1] = new Employee('Techno', 'Deborah De Luca', 2, 15.752);
+        Table123[2] = new Employee('Electro House', 'David Guetta', 3,98.575);
+        Table123[3] = new Employee('Techno House', 'Martin Garrix', 4, 22.513);
+        Table123[4] = new Employee('EDM/Pop', 'Deadmau5', 5, 17.566);
+        Table123[5] = new Employee('Elcetro', 'Hardwell', 6, 38.553);
+        Table123[6] = new Employee('EDM', 'Calvin Harris', 7, 35.011);
+        Table123[7] = new Employee('Progressive', 'Tiesto', 8, 98.588);
+        Table123[8] = new Employee('EDM', 'Steve Aoki', 9, 41.495);
+        Table123[9] = new Employee('Underground', 'Nina Kraviz', 10, 6.678);
+
+        function ShowTable(Tab)
+        {
+            var txt = '';
+
+            for (var x = 0; x < Tab.length; x++)
+            {
+                txt += '<tr>';
+                txt += '<td>' + Tab[x].id + '</td>';
+                txt += '<td>' + Tab[x].surname + '</td>';
+                txt += '<td>' + Tab[x].name + '</td>';
+                txt += '<td>' + Tab[x].salary + '</td>';
+                txt += '</tr>';
+            }
+
+            var TextInTable = document.getElementById("RecordsInTable");
+
+            TextInTable.innerHTML = txt;
+        }
+    </script>
+</head>
+<body>
+    <header style="background-image:url('Pictures/marshmello-5120x2880-live-concert-4k-7560 (1).jpg')">
+       
+    </header>
+    <nav>
+        <h2>Menu:</h2>
+        <ul>
+            <li><a href="Index.html" target="_self">Main Page</a></li>
+            <li><a href="Employee.html" target="_self">Year of the DJ's</a></li>
+            <li><a href="Article.html" target="_self">BIO</a></li>
+            <li><a href="Form.html" target="_self">Form</a></li>
+            <li><a href="map_picture.html" target="_self">Contact</a></li>
+            <li><a href="https://plug.dj/" target="_self">We are here!</a></li>
+            <li><a href="https://you.dj/pl" target="_blank">Feel it!</a></li>
+            <li><a href="http://www.google.com" target="_self">Search</a></li>
+        </ul>
+    </nav>
+    <article>
+        <h2>Table with our employees.</h2>
+
+        <div id="box" style="color:white;">
+            <input type="button" value="Load The Table" onclick="ShowTable(Table123);" />
+            <br />
+            <table border="1">
+                <thead>
+                    <tr>
+                        <td>DJ</td>
+                        <td>Name</td>
+                        <td>Type of Music</td>
+                        <td>Followers</td>
+                    </tr>
+                </thead>
+                <tbody id="RecordsInTable"></tbody>
+            </table>
+        </div>
+    </article>
+    <aside>
+        <iframe src="JavaScript_Controls.html"></iframe>
+    </aside>
+    <footer>
+        2018 BY DAVID MORALES. ALL RIGHTS RESERVED. WEB DESIGN ENGIN CAN DESIGN
+    </footer>
+</body>
+</html>
